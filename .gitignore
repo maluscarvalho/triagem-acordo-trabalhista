@@ -1,0 +1,21 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Dados sensíveis — NÃO versionar
+# Documentos de processos, PDFs e credenciais MNI ficam fora do repositório.
+*.pdf
+*.docx
+credenciais*
+*.env
+.env
+secrets*
+
+# Logs e temporários
+*.log
+tmp/
