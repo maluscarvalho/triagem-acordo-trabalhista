@@ -1,5 +1,7 @@
 # Triagem de Processos Trabalhistas para Acordo / Conciliação
 
+[![Licença: Apache 2.0](https://img.shields.io/badge/Licen%C3%A7a-Apache%202.0-blue.svg)](LICENSE)
+
 Subagente para **[Claude Code](https://docs.claude.com/en/docs/claude-code)** que faz a
 **triagem técnica de processos trabalhistas** candidatos a uma **PAUTA ESPECIAL DE
 ACORDO / CONCILIAÇÃO**.
