@@ -45,7 +45,7 @@ Clone o repositório e copie o arquivo do agente para a pasta de agentes do Clau
 ### Instalação por usuário (global — disponível em todas as pastas)
 
 ```bash
-git clone https://github.com/<seu-usuario>/triagem-acordo-trabalhista.git
+git clone https://github.com/maluscarvalho/triagem-acordo-trabalhista.git
 cd triagem-acordo-trabalhista
 mkdir -p ~/.claude/agents
 cp agents/triagem-acordo-trabalhista.md ~/.claude/agents/
