@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "📖 Documentação dos critérios"
+    url: https://github.com/maluscarvalho/triagem-acordo-trabalhista/blob/main/docs/criterios.md
+    about: "Antes de abrir uma issue, confira a árvore de decisão documentada."

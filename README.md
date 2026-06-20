@@ -40,9 +40,21 @@ específico, o agente faz *fallback* para o `tecjustica` (PDPJ).
 
 ## Instalação
 
+### Instalação rápida (script)
+
+```bash
+git clone https://github.com/maluscarvalho/triagem-acordo-trabalhista.git
+cd triagem-acordo-trabalhista
+./install.sh            # global, em ~/.claude/agents/
+# ou
+./install.sh --project  # apenas no projeto atual, em ./.claude/agents/
+```
+
+### Instalação manual
+
 Clone o repositório e copie o arquivo do agente para a pasta de agentes do Claude Code.
 
-### Instalação por usuário (global — disponível em todas as pastas)
+#### Instalação por usuário (global — disponível em todas as pastas)
 
 ```bash
 git clone https://github.com/maluscarvalho/triagem-acordo-trabalhista.git
@@ -51,7 +63,7 @@ mkdir -p ~/.claude/agents
 cp agents/triagem-acordo-trabalhista.md ~/.claude/agents/
 ```
 
-### Instalação por projeto (apenas no repositório atual)
+#### Instalação por projeto (apenas no repositório atual)
 
 ```bash
 mkdir -p .claude/agents
@@ -107,6 +119,10 @@ triagem-acordo-trabalhista/
 │   └── triagem-acordo-trabalhista.md   # definição do subagente (frontmatter + prompt)
 ├── docs/
 │   └── criterios.md                    # árvore de decisão e formato do relatório
+├── .github/
+│   └── ISSUE_TEMPLATE/                  # templates de bug e sugestão de critério
+├── install.sh                          # instalador (global ou por projeto)
+├── CONTRIBUTING.md                     # como contribuir
 ├── LICENSE                             # Apache-2.0
 ├── .gitignore
 └── README.md

@@ -1,0 +1,52 @@
+name: "🐞 Reportar problema"
+description: "Erro de execução, falha de consulta MCP ou comportamento inesperado do agente."
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigada por reportar! **Não cole dados sigilosos** (números de processo de
+        partes reais, CPFs, credenciais MNI). Use exemplos anonimizados.
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o comportamento observado.
+      placeholder: "Ao rodar a triagem, o agente retornou ... mas o esperado era ..."
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Pedi a triagem do processo (anonimizado) ...
+        2. O agente chamou a ferramenta ...
+        3. Retornou o erro ...
+    validations:
+      required: true
+  - type: dropdown
+    id: mcp
+    attributes:
+      label: Qual fonte de dados estava em uso?
+      options:
+        - PJe-MNI (pje-mni)
+        - TecJustica / PDPJ (tecjustica)
+        - Fallback (MNI falhou, usou PDPJ)
+        - Não sei
+    validations:
+      required: true
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: "Versão do Claude Code, SO, instalação global ou por projeto."
+    validations:
+      required: false

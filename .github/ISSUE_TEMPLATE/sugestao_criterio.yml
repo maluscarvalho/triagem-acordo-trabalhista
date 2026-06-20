@@ -1,0 +1,48 @@
+name: "⚖️ Sugerir mudança de critério"
+description: "Propor ajuste na árvore de decisão, limiares, setores ou funções recomendados."
+title: "[criterio]: "
+labels: ["criterio"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Critérios são o coração do projeto. Toda mudança precisa de **racional
+        jurídico ou operacional**. Veja o `CONTRIBUTING.md` antes de abrir.
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: Qual parte da árvore de decisão?
+      options:
+        - "Nível 0 — Exclusão absoluta (subsidiária)"
+        - "Nível 1 — Bloqueios por perícia / natureza do pedido"
+        - "Nível 2 — Favoráveis fortes (porte, setor, função, pedidos negociáveis)"
+        - "Nível 3 — Favoráveis por composição / valor"
+        - "Pressão litigiosa (volume / execuções)"
+        - "Regras de desempate"
+        - "Setores recomendados"
+        - "Funções recomendadas"
+        - "Limiares de valor / salário"
+    validations:
+      required: true
+  - type: textarea
+    id: mudanca
+    attributes:
+      label: Mudança proposta
+      description: O que deve mudar, de forma concreta (de X para Y).
+      placeholder: "Elevar o limiar de salário do setor de R$ 3.500 para R$ 4.000."
+    validations:
+      required: true
+  - type: textarea
+    id: racional
+    attributes:
+      label: Racional (por quê?)
+      description: Fundamento jurídico, estatístico ou operacional.
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto esperado no veredito
+      placeholder: "Casos hoje NÃO RECOMENDADO passariam a RECOMENDADO quando ..."
+    validations:
+      required: false
